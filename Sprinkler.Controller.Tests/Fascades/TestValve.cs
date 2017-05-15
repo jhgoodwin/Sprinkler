@@ -1,4 +1,4 @@
-﻿namespace Sprinkler.Controller.Tests
+﻿namespace Sprinkler.Controller.Tests.Fascades
 {
     internal class TestValve : IValve
     {

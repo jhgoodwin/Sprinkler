@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Sprinkler.Controller.Tests.Fascades;
 
 namespace Sprinkler.Controller.Tests
 {
