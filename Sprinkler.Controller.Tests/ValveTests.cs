@@ -13,8 +13,15 @@ namespace Sprinkler.Controller.Tests
             Assert.IsTrue(valve.IsOpen(), "Expected valve to be open after setting it to open");
         }
 
+        [TestMethod]
+        public void Valve_SetFalse_Success()
+        {
+            var valve = GetValve(true);
+            valve.Set(false);
+            Assert.IsFalse(valve.IsOpen(), "Expected valve to be closed after setting it to closed");
+        }
 
-#region Private Helper Methods
+        #region Private Helper Methods
         private IValve GetValve(bool isInitiallyOpen)
         {
             return new TestValve(isInitiallyOpen);
